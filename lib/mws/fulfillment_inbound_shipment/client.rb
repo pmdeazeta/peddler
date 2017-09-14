@@ -51,6 +51,8 @@ module MWS
       # @param [Array<Struct, Hash>] inbound_shipment_plan_request_items
       # @param [Hash] opts
       # @option opts [String] :label_prep_preference
+      # @option opts [String] :ship_to_country_code
+      # @option opts [String] :ship_to_country_subdivision_code
       # @return [Peddler::XMLParser]
       def create_inbound_shipment_plan(ship_from_address, inbound_shipment_plan_request_items, opts = {})
         operation('CreateInboundShipmentPlan')
